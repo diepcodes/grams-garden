@@ -1,0 +1,627 @@
+{
+  "b": 118,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Opening",
+  "name": "Opening",
+  "r": 123,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 188,
+  "uiSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 0.6823712046946933,
+    "windowMask": false
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Background",
+      "name": "Title",
+      "persistentUuid": "84ef1f7f-7541-4141-912e-1815563836e3",
+      "width": 0,
+      "x": 205,
+      "y": 70,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 823,
+      "layer": "Background",
+      "name": "Theme_bg",
+      "persistentUuid": "c721a22f-27d4-47cf-ae19-9558d0c21de1",
+      "width": 966,
+      "x": -2,
+      "y": -226,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 87,
+      "layer": "",
+      "name": "Title",
+      "persistentUuid": "f49f88d1-5925-4641-b290-10245541ff66",
+      "width": 675,
+      "x": 125,
+      "y": 137,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Title",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\UI\\title.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 542,
+                        "y": 0
+                      },
+                      {
+                        "x": 542,
+                        "y": 57
+                      },
+                      {
+                        "x": 0,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "btn_start",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {},
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 0,
+          "height": 66,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\UI\\start2.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 226
+        },
+        "Idle": {
+          "bottomMargin": 0,
+          "height": 66,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\UI\\start.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 226
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "",
+          "font": "",
+          "textAlignment": "",
+          "characterSize": 0,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 0,
+          "height": 66,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\UI\\start3.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 226
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "btn_garden",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {},
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 0,
+          "height": 66,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\UI\\garden2.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 226
+        },
+        "Idle": {
+          "bottomMargin": 0,
+          "height": 66,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\UI\\garden.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 226
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "",
+          "font": "",
+          "textAlignment": "",
+          "characterSize": 0,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 0,
+          "height": 66,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\UI\\garden2.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 226
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "btn_settings",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {},
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 0,
+          "height": 66,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\UI\\settings2.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 226
+        },
+        "Idle": {
+          "bottomMargin": 0,
+          "height": 66,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\UI\\settings.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 226
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "",
+          "font": "",
+          "textAlignment": "",
+          "characterSize": 0,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 0,
+          "height": 66,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\UI\\settings2.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 226
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "btn_quit",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {},
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 0,
+          "height": 66,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\UI\\quit2.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 226
+        },
+        "Idle": {
+          "bottomMargin": 0,
+          "height": 66,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\UI\\quit.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 226
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "",
+          "font": "",
+          "textAlignment": "",
+          "characterSize": 0,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 0,
+          "height": 66,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\UI\\quit.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 226
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "Loading",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Loading...",
+      "font": "assets\\InknutAntiqua-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 55,
+        "g": 55,
+        "r": 90
+      }
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Title"
+      },
+      {
+        "objectName": "btn_start"
+      },
+      {
+        "objectName": "btn_garden"
+      },
+      {
+        "objectName": "btn_settings"
+      },
+      {
+        "objectName": "btn_quit"
+      },
+      {
+        "objectName": "Loading"
+      }
+    ]
+  },
+  "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Initiation",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Settings.Music",
+                "=",
+                "50"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Settings.Sound",
+                "=",
+                "50"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                ".5"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Sounds\\theme-music.mp3",
+                "yes",
+                "GlobalVariable(Settings.Music)",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Loading",
+                "Title.X()+200",
+                "Title.Y()+300",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Main Menu\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Background",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "LinearMovement",
+      "type": "LinearMovement::LinearMovement"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "PlatformerObject",
+      "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "SmoothCamera",
+      "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    }
+  ]
+}

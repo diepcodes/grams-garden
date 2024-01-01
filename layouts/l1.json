@@ -1,0 +1,2608 @@
+{
+  "b": 209,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "L1",
+  "name": "L1",
+  "r": 209,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 209,
+  "uiSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 0.8382000000000074,
+    "windowMask": false
+  },
+  "objectsGroups": [
+    {
+      "name": "MovingObjects",
+      "objects": [
+        {
+          "name": "Monkey"
+        },
+        {
+          "name": "Tile1"
+        },
+        {
+          "name": "Banana"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "name": "ObstacleType",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "GameStatus",
+      "type": "string",
+      "value": "Preparing"
+    },
+    {
+      "name": "ObstacleSpawnDelay",
+      "type": "string",
+      "value": "2"
+    },
+    {
+      "name": "DangerInField",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "SpawnedCactusInField",
+      "type": "number",
+      "value": 0
+    }
+  ],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "FruitCount",
+      "persistentUuid": "b4cdf63a-8d7e-4bd0-83ee-8dfd60fd49dd",
+      "width": 0,
+      "x": 32,
+      "y": 32,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 672,
+      "layer": "Background",
+      "name": "Background",
+      "persistentUuid": "48c699d8-eec9-4115-ae30-822d8389a521",
+      "width": 960,
+      "x": 0,
+      "y": 0,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "layer": "",
+      "name": "Elder",
+      "persistentUuid": "4355f663-4fd5-41b2-83c2-2c5f313938d9",
+      "width": 125,
+      "x": 131,
+      "y": 322,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 51,
+      "layer": "UI",
+      "name": "TutorialText",
+      "persistentUuid": "3725e2af-9bb7-48f2-b571-0eb9a307aac5",
+      "width": 693,
+      "x": 139,
+      "y": 237,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 192,
+      "layer": "",
+      "name": "Ground",
+      "persistentUuid": "2f0742b3-6308-434c-b4f5-630dc15ef251",
+      "width": 1280,
+      "x": 1280,
+      "y": 480,
+      "zOrder": 37,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 192,
+      "layer": "",
+      "name": "Ground",
+      "persistentUuid": "8f8ab5d6-33a8-4c19-a424-cfd70a6555a9",
+      "width": 1280,
+      "x": 0,
+      "y": 480,
+      "zOrder": 37,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 141,
+      "layer": "",
+      "name": "Monkey",
+      "persistentUuid": "e600bd9b-5299-49b1-94a9-636cc07a1468",
+      "width": 111,
+      "x": 775,
+      "y": 205,
+      "zOrder": 38,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "layer": "UI",
+      "name": "home_btn",
+      "persistentUuid": "f5713980-f3b1-448c-be64-f04a9b533723",
+      "width": 33,
+      "x": 896,
+      "y": 32,
+      "zOrder": 39,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Monkey",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "LinearMovement",
+          "type": "LinearMovement::LinearMovement",
+          "SpeedX": -160,
+          "SpeedY": 0
+        },
+        {
+          "name": "RectangleMovement",
+          "type": "RectangleMovement::RectangleMovement",
+          "Width": 110,
+          "Height": 120,
+          "Clockwise": true,
+          "HorizontalEdgeDuration": 4,
+          "VerticalEdgeDuration": 1,
+          "Left": 1.00000000000091,
+          "Top": 1.00000000000091,
+          "Progress": 1.00000000000091,
+          "OldX": 1.00000000000091,
+          "OldY": 1.00000000000091,
+          "Easing": "easeInQuad",
+          "InitialPosition": "Top-right corner",
+          "ToogleClockwise": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.15,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy\\monkey1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 9,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 6
+                      },
+                      {
+                        "x": 139,
+                        "y": 6
+                      },
+                      {
+                        "x": 139,
+                        "y": 173
+                      },
+                      {
+                        "x": 0,
+                        "y": 173
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy\\monkey2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 9,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 6
+                      },
+                      {
+                        "x": 139,
+                        "y": 6
+                      },
+                      {
+                        "x": 139,
+                        "y": 173
+                      },
+                      {
+                        "x": 0,
+                        "y": 173
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy\\monkey3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 9,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 6
+                      },
+                      {
+                        "x": 139,
+                        "y": 6
+                      },
+                      {
+                        "x": 139,
+                        "y": 173
+                      },
+                      {
+                        "x": 0,
+                        "y": 173
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Tile1",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Reward",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 1000
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "platformType": "Jumpthru",
+          "canBeGrabbed": false,
+          "yGrabOffset": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BG\\tile1.png",
+                  "points": [
+                    {
+                      "name": "RewardUp",
+                      "x": 77,
+                      "y": -64
+                    },
+                    {
+                      "name": "RewardDown",
+                      "x": 77,
+                      "y": 208
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "",
+                    "x": 77,
+                    "y": 132
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 405,
+                        "y": 0
+                      },
+                      {
+                        "x": 405,
+                        "y": 130
+                      },
+                      {
+                        "x": 0,
+                        "y": 130
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "FruitCount",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 6,
+            "thickness": 5
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "string": "Bananas: 0/8",
+      "font": "assets\\Nathaniel-19.otf",
+      "textAlignment": "",
+      "characterSize": 40,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Banana",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "Effect",
+          "doubleParameters": {
+            "distance": 15,
+            "innerStrength": 1,
+            "outerStrength": 2
+          },
+          "stringParameters": {
+            "color": "51;220;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 1000
+        }
+      ],
+      "animations": [
+        {
+          "name": "Shadow",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Items\\Banana.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 65,
+                        "y": 1
+                      },
+                      {
+                        "x": 65,
+                        "y": 57
+                      },
+                      {
+                        "x": 9,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "TutorialText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 6,
+            "thickness": 5
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "string": "Press the UP key to jump/start",
+      "font": "assets\\Nathaniel-19.otf",
+      "textAlignment": "center",
+      "characterSize": 50,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 128,
+      "height": 384,
+      "leftMargin": 128,
+      "name": "Ground",
+      "rightMargin": 128,
+      "texture": "assets\\BG\\ground1.png",
+      "tiled": true,
+      "topMargin": 128,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 384,
+      "variables": [
+        {
+          "folded": true,
+          "name": "Piece",
+          "type": "number",
+          "value": 1
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "NormalPlatform",
+          "yGrabOffset": 0
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 128,
+      "name": "Background",
+      "texture": "assets\\BG\\bg1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 128,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Monkey2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "LinearMovement",
+          "type": "LinearMovement::LinearMovement",
+          "SpeedX": -180,
+          "SpeedY": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.05,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy\\monkey1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 9,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 6
+                      },
+                      {
+                        "x": 139,
+                        "y": 6
+                      },
+                      {
+                        "x": 139,
+                        "y": 173
+                      },
+                      {
+                        "x": 0,
+                        "y": 173
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy\\monkey2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 9,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 6
+                      },
+                      {
+                        "x": 139,
+                        "y": 6
+                      },
+                      {
+                        "x": 139,
+                        "y": 173
+                      },
+                      {
+                        "x": 0,
+                        "y": 173
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy\\monkey3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 9,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 6
+                      },
+                      {
+                        "x": 139,
+                        "y": 6
+                      },
+                      {
+                        "x": 139,
+                        "y": 173
+                      },
+                      {
+                        "x": 0,
+                        "y": 173
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Monkey"
+      },
+      {
+        "objectName": "Monkey2"
+      },
+      {
+        "objectName": "Tile1"
+      },
+      {
+        "objectName": "FruitCount"
+      },
+      {
+        "objectName": "TutorialText"
+      },
+      {
+        "objectName": "Banana"
+      },
+      {
+        "objectName": "Ground"
+      },
+      {
+        "objectName": "Background"
+      }
+    ]
+  },
+  "events": [
+    {
+      "folded": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TiledSpriteObject::XOffset"
+          },
+          "parameters": [
+            "Background",
+            "=",
+            "CameraCenterX()/4"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "FruitCount1",
+            "=",
+            "0/8"
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Elder",
+            "PlatformerObject",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SystemInfo::IsMobile"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "TutorialText",
+                "=",
+                "\"Touch anywhere On screen to jump/start\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::SetTextAlignment"
+              },
+              "parameters": [
+                "TutorialText",
+                "\"center\""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Home btn",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "home_btn",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween2"
+              },
+              "parameters": [
+                "home_btn",
+                "Tween",
+                "\"scale\"",
+                ".25",
+                ".25",
+                "\"easeOutBounce\"",
+                ".1",
+                "",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "home_btn",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween2"
+              },
+              "parameters": [
+                "home_btn",
+                "Tween",
+                "\"scale\"",
+                ".2",
+                ".2",
+                "\"easeOutBounce\"",
+                ".1",
+                "",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "home_btn",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Main Menu\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 74,
+      "colorR": 194,
+      "creationTime": 0,
+      "name": "Game states",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 196,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Preparing to start",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "GameStatus",
+                    "=",
+                    "\"Preparing\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "AnyKeyReleased"
+                          },
+                          "parameters": [
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MouseButtonPressed"
+                          },
+                          "parameters": [
+                            "Elder",
+                            "Left"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "GameStatus",
+                        "=",
+                        "\"Playing\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"obstacle_spawn\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "TutorialText"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "Elder",
+                        "PlatformerObject",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Elder",
+                        "Animation",
+                        "=",
+                        "\"Walk\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlayMusic"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\Sounds\\theme-music.mp3",
+                        "yes",
+                        "GlobalVariable(Settings.Music)",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Elder",
+                        "=",
+                        "100"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Playing the game",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "GameStatus",
+                    "=",
+                    "\"Playing\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "FruitCount",
+                    "=",
+                    "\"Bananas: \" + GlobalVariableString(FruitCount1) + \"/8\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Move the player object across the scene and change the background's offeset based on the base layer camera."
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledSpriteObject::XOffset"
+                      },
+                      "parameters": [
+                        "Background",
+                        "=",
+                        "CameraCenterX()/4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::SimulateRightKey"
+                      },
+                      "parameters": [
+                        "Elder",
+                        "PlatformerObject"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Player movements",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Sounds",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsJumping"
+                              },
+                              "parameters": [
+                                "Elder",
+                                "PlatformerObject"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "assets\\Sounds\\jump.mp3",
+                                "",
+                                "GlobalVariable(Settings.Sound)",
+                                "1"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Controls",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Or"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "KeyPressed"
+                                  },
+                                  "parameters": [
+                                    "Elder",
+                                    "Up"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "MouseButtonPressed"
+                                  },
+                                  "parameters": [
+                                    "Elder",
+                                    "Left"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::SimulateJumpKey"
+                              },
+                              "parameters": [
+                                "Elder",
+                                "PlatformerObject"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Elder",
+                                "Animation",
+                                "=",
+                                "\"Jump\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsFalling"
+                              },
+                              "parameters": [
+                                "Elder",
+                                "PlatformerObject"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Elder",
+                                "Animation",
+                                "=",
+                                "\"Fall\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Elder",
+                                "Animation",
+                                "=",
+                                "\"Walk\""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "FruitCount",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Elder",
+                            "Banana",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "FruitCount1",
+                            "+",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Banana",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\Sounds\\bonus.mp3",
+                            "",
+                            "GlobalVariable(Settings.Sound)",
+                            "1.4"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Obstacle spawn",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Increase difficulty with score by reducing the spawn delay (min. 1 second) and increasing player's speed."
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::MaxSpeed"
+                          },
+                          "parameters": [
+                            "Elder",
+                            "PlatformerObject",
+                            "<",
+                            "400"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::MaxSpeed"
+                          },
+                          "parameters": [
+                            "Elder",
+                            "PlatformerObject",
+                            "=",
+                            "Elder.PlatformerObject::MaxSpeed()+TimeDelta()*2"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "ObstacleSpawnDelay",
+                            ">",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "ObstacleSpawnDelay",
+                            "-",
+                            "TimeDelta()/50"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Replacing the ground"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PosX"
+                          },
+                          "parameters": [
+                            "Ground",
+                            "<",
+                            "Elder.X() - Ground.Width() - 80"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Ground",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "SceneInstancesCount"
+                          },
+                          "parameters": [
+                            "",
+                            "Ground",
+                            "<",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "Greenleaves",
+                            "Ground"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Ground",
+                            "Ground.X() + Ground.Width()",
+                            "Ground.Y()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PanelSpriteObject::Width"
+                          },
+                          "parameters": [
+                            "Ground",
+                            "=",
+                            "1280"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PanelSpriteObject::Height"
+                          },
+                          "parameters": [
+                            "Ground",
+                            "=",
+                            "160"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Randomly chose the obstacle type (0: single danger, 1: Platform, 2: danger field) when spawn delay is reached. Once the obstacle is created, we reset the spawn timer."
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"obstacle_spawn\"",
+                            ">=",
+                            "Variable(ObstacleSpawnDelay)"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "ObstacleType",
+                            "=",
+                            "RandomInRange(0,2)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"obstacle_spawn\""
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "ObstacleType",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "Monkey",
+                                "RandomInRange(75, 125) + 960 + Elder.X()",
+                                "RandomFloat(10) + 200",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ChangeScale"
+                              },
+                              "parameters": [
+                                "Monkey",
+                                "*",
+                                ".75"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Create an Platform with a reward (0: reward on bottom, 1: reward on top, 3: no reward)."
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "ObstacleType",
+                                "=",
+                                "1"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "Tile1",
+                                "RandomInRange(75, 125) + 960 + Elder.X()",
+                                "Ground.BoundingBoxTop() - 120",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Tile1",
+                                "Reward",
+                                "=",
+                                "RandomInRange(0, 1)"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ChangeScale"
+                              },
+                              "parameters": [
+                                "Tile1",
+                                "*",
+                                "125 / (max(Tile1.Width(), Tile1.Height()))"
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "VarObjet"
+                                  },
+                                  "parameters": [
+                                    "Tile1",
+                                    "Reward",
+                                    "=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Banana",
+                                    "Tile1.PointX(\"RewardUp\")",
+                                    "Tile1.PointY(\"RewardUp\")",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ChangeScale"
+                                  },
+                                  "parameters": [
+                                    "Banana",
+                                    "*",
+                                    "80/(max(Banana.Width(), Banana.Height()))"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "VarObjet"
+                                  },
+                                  "parameters": [
+                                    "Tile1",
+                                    "Reward",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Banana",
+                                    "Tile1.PointX(\"RewardDown\")",
+                                    "Tile1.PointY(\"RewardDown\")",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ChangeScale"
+                                  },
+                                  "parameters": [
+                                    "Banana",
+                                    "*",
+                                    "60/(max(Banana.Width(), Banana.Height()))"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Spawn a danger field of length scaling with score (max 4)."
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "ObstacleType",
+                                "=",
+                                "2"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "dangerInField",
+                                "=",
+                                "RandomInRange(1, 1 + round(clamp(GlobalVariable(FruitCount1) / 3000, 0, 4)))"
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "infiniteLoopWarning": true,
+                              "type": "BuiltinCommonInstructions::While",
+                              "whileConditions": [
+                                {
+                                  "type": {
+                                    "value": "VarScene"
+                                  },
+                                  "parameters": [
+                                    "SpawneddangerInField",
+                                    "<",
+                                    "Variable(dangerInField)"
+                                  ]
+                                }
+                              ],
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Monkey2",
+                                    "RandomInRange(75, 125) + 960 + Elder.X()",
+                                    "Ground.BoundingBoxTop() - 100",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ModVarScene"
+                                  },
+                                  "parameters": [
+                                    "SpawneddangerInField",
+                                    "+",
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ChangeScale"
+                                  },
+                                  "parameters": [
+                                    "Monkey2",
+                                    "*",
+                                    "110 / (max(Monkey.Width(), Monkey.Height()))"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ModVarScene"
+                                  },
+                                  "parameters": [
+                                    "SpawneddangerInField",
+                                    "=",
+                                    "0"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Level over",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Player loses when Player collided with a danger"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Elder",
+                            "Monkey",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Elder",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Elder_death",
+                            "Elder.X()",
+                            "Elder.Y()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PauseTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"obstacle_spawn\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "GameStatus",
+                            "=",
+                            "\"Dead\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\Sounds\\death.mp3",
+                            "",
+                            "GlobalVariable(Settings.Sound)",
+                            "1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Elder",
+                            "Monkey2",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Elder",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Elder_death",
+                            "Elder.X()",
+                            "Elder.Y()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PauseTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"obstacle_spawn\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "GameStatus",
+                            "=",
+                            "\"Dead\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\Sounds\\death.mp3",
+                            "",
+                            "GlobalVariable(Settings.Sound)",
+                            "1"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 147,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Level lost",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "GameStatus",
+                    "=",
+                    "\"Dead\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "TutorialText",
+                        "=",
+                        "\"Press any key to restart the game\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "SystemInfo::IsMobile"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextObject::String"
+                          },
+                          "parameters": [
+                            "TutorialText",
+                            "=",
+                            "\"Touch anywhere On screen to restart\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "TutorialText",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextObject::SetTextAlignment"
+                          },
+                          "parameters": [
+                            "TutorialText",
+                            "\"center\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Restart if key pressed or touched"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "AnyKeyReleased"
+                          },
+                          "parameters": [
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MouseButtonPressed"
+                          },
+                          "parameters": [
+                            "Elder",
+                            "Left"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"L1\"",
+                        "yes"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Level complete",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "FruitCount1",
+                    "=",
+                    "8"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetGlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "L.L2",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "FruitCount",
+                    "=",
+                    "\"Bananas: \" + GlobalVariableString(FruitCount1) + \"/8\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Elder",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Elder_win",
+                    "Elder.X()",
+                    "Elder.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "GameStatus",
+                    "=",
+                    "\"Win\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Move to next level",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "GameStatus",
+                    "=",
+                    "\"Win\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "TutorialText",
+                        "Elder_win.X()+100",
+                        "CameraCenterY()-100",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "TutorialText",
+                        "=",
+                        "\"Level complete!\nHit Spacebar to go to Garden\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "Space"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "HasAnyTouchOrMouseStarted"
+                          },
+                          "parameters": [
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Garden Menu\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "parameters": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": -2147483616,
+      "ambientLightColorG": 6032144,
+      "ambientLightColorR": 6124984,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Background",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 32,
+      "ambientLightColorG": 0,
+      "ambientLightColorR": 0,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "UI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "LinearMovement",
+      "type": "LinearMovement::LinearMovement"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Platform",
+      "type": "PlatformBehavior::PlatformBehavior"
+    },
+    {
+      "name": "PlatformerObject",
+      "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "RectangleMovement",
+      "type": "RectangleMovement::RectangleMovement"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "SmoothCamera",
+      "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    }
+  ]
+}

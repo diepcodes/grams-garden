@@ -1,0 +1,3638 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.gramsgarden.game",
+    "pixelsRounding": false,
+    "projectUuid": "7427882b-c70c-4fef-96e4-f7b1c1edf2e3",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "",
+    "templateSlug": "",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "Grams Garden",
+    "description": "Granny Gigi grew a beautiful, fruitful garden. One day, the evil monkeys came, destroying the garden and stealing all the seeds. Granny Gigi has to chase after them to get her seeds back and rebuild the garden! Can she make it??",
+    "author": "DiepNg",
+    "windowWidth": 960,
+    "windowHeight": 540,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "assets\\Icon-phone.png",
+      "desktop-icon-512": "assets\\Icon.png",
+      "ios-icon-100": "",
+      "ios-icon-1024": "assets\\Icon-phone.png",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": "",
+      "liluo-thumbnail": "assets\\Thumb.png"
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [
+      "4yZjD43WukPivbZNpHJSUZX9GtV2"
+    ],
+    "authorUsernames": [
+      "Diep2023"
+    ],
+    "categories": [
+      "platformer",
+      "mini-games"
+    ],
+    "playableDevices": [
+      "keyboard",
+      "mobile"
+    ],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/jump.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Jump.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://gdevelop-generations.s3.amazonaws.com/projects/templates/endless-runner/assets/jump.mp3",
+          "name": "Jump.mp3"
+        }
+      },
+      {
+        "file": "assets/bonus.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Bonus.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://gdevelop-generations.s3.amazonaws.com/projects/templates/endless-runner/assets/bonus.mp3",
+          "name": "Bonus.mp3"
+        }
+      },
+      {
+        "file": "assets/Nathaniel-19.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Nathaniel-19.otf",
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://gdevelop-generations.s3.amazonaws.com/projects/templates/endless-runner/assets/Nathaniel-19.otf",
+          "name": "Nathaniel-19.otf"
+        }
+      },
+      {
+        "file": "assets/death.mp3",
+        "kind": "audio",
+        "metadata": "{\"localFilePath\":\"assets/death.mp3\",\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Jump 1\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.06,\\\"sustainPunch\\\":0,\\\"decay\\\":0.32,\\\"tremoloDepth\\\":16,\\\"tremoloFrequency\\\":84,\\\"frequency\\\":1700,\\\"frequencySweep\\\":-4300,\\\"frequencyDeltaSweep\\\":-4700,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"pinknoise\\\",\\\"interpolateNoise\\\":false,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"Death.mp3\"}}",
+        "name": "Death.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://gdevelop-generations.s3.amazonaws.com/projects/templates/endless-runner/assets/death.mp3",
+          "name": "Death.mp3"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Elder_Idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Elder_Idle_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Chierit/Lively NPC/Medieval/c44e89edb944e1ef1ffe1a1620c2430a220fc318b6c50155e8bedb67b84c44ee_Elder_Idle_1.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Elder_Idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Elder_Idle_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Chierit/Lively NPC/Medieval/547a518b9a31eec399dc878a6dbdf33eeb373e54ecb64e0024cd0f8fd2ce97eb_Elder_Idle_2.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Elder_Idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Elder_Idle_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Chierit/Lively NPC/Medieval/c094fd1b68fba2129714482b8f2e5ab014e4027abcbf5b1d635ada27b3deecc8_Elder_Idle_3.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Elder_Idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Elder_Idle_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Chierit/Lively NPC/Medieval/dad782f282e5065143604320a1c7bbb1a10bf624378dc3c0d5d9e703f1c0e7a3_Elder_Idle_4.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Monster.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Monster.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Wesxdz Game Assets/skullcup/Characters/efcc4c7bd5d61af14041ce090f9facb0991e5fe42471ed980a92fd8322d97cc0_Monster.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Banana_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Banana_No Shadow.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Food/8b70e09be66e8266ab20a306882db0f651d39bda17a0ed1ea43b5a48ada07cf4_Banana_No Shadow.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Banana_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Banana_Shadow.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Food/f1fe34d662adad17dd959a4587171d9b3a3b2d9520147d17458c41f8f35b416b_Banana_Shadow.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Tree.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tree.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Worlds/Desert/Objects/8b1ff861cb3fd1ee164ca6827cd60191eab38e00f87325bfc0790c799637c998_Tree.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tiled_Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_Background.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GDevelop examples/Platformer/Background/e10d4d02f445ddc7daf068b27546f89a8fe1f2ecb3e5c8ce21a73c8dbc8234b7_tiled_Background.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/9patch_Green leaves_all_128.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "9patch_Green leaves_all_128.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Foliage Pack (100 assets)/PNG/Retina/6d46ded7e8bb8db1460cf56ad9e01e0fa3197d3a9e16510f52cae2987f2d6002_9patch_Green leaves_all_128.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../../Downloads/grams/granny-walk1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\grams\\granny-walk1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../../Downloads/grams/granny-walk2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\grams\\granny-walk2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../../Downloads/grams/granny-walk3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\grams\\granny-walk3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../../Downloads/grams/granny-walk4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\grams\\granny-walk4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/grams/granny-walk1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\grams\\granny-walk1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/grams/granny-walk2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\grams\\granny-walk2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/grams/granny-walk3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\grams\\granny-walk3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/grams/granny-walk4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\grams\\granny-walk4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/bg1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bg1.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ground1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ground1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tile1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\tile1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/monkey1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\monkey1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/grams/granny-jump1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\grams\\granny-jump1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/grams/granny-jump2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\grams\\granny-jump2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/grams/granny-jump3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\grams\\granny-jump3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/grams/granny-jump4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\grams\\granny-jump4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/grams/granny-fall1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\grams\\granny-fall1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/grams/granny-fall2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\grams\\granny-fall2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/grams/granny-fall3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\grams\\granny-fall3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/grams/granny-fall4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\grams\\granny-fall4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/bg1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bg1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/bg2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bg2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/start.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\start.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sounds/bonus.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Sounds\\bonus.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Sounds/jump.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Sounds\\jump.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Sounds/death.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Sounds\\death.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ground2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ground2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tile2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\tile2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Rain.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Rain.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/7a335da0136a4a4aa158c6001348e99f6b208400b90a0535f0c981005e29d994_Rain.png",
+          "name": "Rain.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/banana.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\banana.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/monkey2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\monkey2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/monkey11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\monkey11.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/orange.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\orange.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Rain Drop.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Rain Drop.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Sounds/rain-sound.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Sounds\\rain-sound.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-walk5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-walk5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-idle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-walk1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-walk1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-walk2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-walk2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-walk3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-walk3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-walk4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-walk4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-idle2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/rain-granny/granny-idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\rain-granny\\granny-idle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/rain-granny/granny-idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\rain-granny\\granny-idle2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/rain-granny/granny-jump1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\rain-granny\\granny-jump1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/rain-granny/granny-jump2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\rain-granny\\granny-jump2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/rain-granny/granny-jump3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\rain-granny\\granny-jump3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/rain-granny/granny-jump4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\rain-granny\\granny-jump4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/rain-granny/granny-fall1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\rain-granny\\granny-fall1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/rain-granny/granny-fall2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\rain-granny\\granny-fall2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/rain-granny/granny-fall3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\rain-granny\\granny-fall3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/rain-granny/granny-fall4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\rain-granny\\granny-fall4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/rain-granny/granny-walk1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\rain-granny\\granny-walk1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/rain-granny/granny-walk2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\rain-granny\\granny-walk2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/rain-granny/granny-walk3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\rain-granny\\granny-walk3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/rain-granny/granny-walk4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\rain-granny\\granny-walk4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/rain-granny/granny-walk5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\rain-granny\\granny-walk5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/garden.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\garden.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/settings.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\settings.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/quit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\quit.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/main-menu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\main-menu.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/title.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\title.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/marker.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "marker",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Flat Bar Green Fill Bar.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Flat Bar Green Fill Bar.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Flat Bar Green Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/4037e5e9b8a1ede7cb20a326256ce5d9e9a5d94715303743595e97375ceaabaf_Flat Bar Green Fill Bar.png",
+          "name": "Flat Bar Green Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Flat Bar White Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar White Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
+          "name": "Flat Bar White Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scroll Empty Heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scroll Empty Heart.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/f0aea5b9b3e205bd734be9061f0c8b7ecec83ee5c3e9e99d2cb2b6f1c724feb1_Scroll Empty Heart.png",
+          "name": "Scroll Empty Heart.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scroll Full Heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scroll Full Heart.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/724e875009329b18b3333082c0890b142288a9d8f17a084d2982c4ff0ab4be43_Scroll Full Heart.png",
+          "name": "Scroll Full Heart.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scroll.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scroll.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/a1f71ca4cfb367163f7e3c16fbf0f60da08de326f00249881ff1057f63789c95_Scroll.png",
+          "name": "Scroll.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square Green Slider Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square Green Slider Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/b20061f94d8b7288702975d6bd15d1a750a6b5ba429c22cb695b19210d0da8b9_Square Green Slider Border.png",
+          "name": "Square Green Slider Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square Green Slider Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square Green Slider Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/553dd6c98bc6b7c3539f936e1c0815fef2796c9aa3468ae90d288bdb5931076b_Square Green Slider Fill Bar.png",
+          "name": "Square Green Slider Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square Green Slider Thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square Green Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/7f9d3fcd723e6cd77452d818e3cba9775f63acdbf98378e7276cc95bf1213e86_Square Green Slider Thumb.png",
+          "name": "Square Green Slider Thumb.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scroll Empty Heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Scroll Empty Heart.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-garden/title-garden.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-garden\\title-garden.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-garden/locked box.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-garden\\locked box.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-garden/banana box-grey.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-garden\\banana box-grey.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/title-settings.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\title-settings.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-settings/title-settings.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-settings\\title-settings.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-settings/text-sound.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-settings\\text-sound.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-settings/text-music.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-settings\\text-music.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/text-back.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\text-back.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Sounds/theme-music.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Sounds\\theme-music.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/start2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\start2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/start3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\start3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/settings2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\settings2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/garden2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\garden2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/quit2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\quit2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/back1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\back1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/back2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\back2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/back3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\back3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-garden/banana-unlocked.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-garden\\banana-unlocked.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-garden/banana-unlocked-hover.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-garden\\banana-unlocked-hover.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-garden/locked-box.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-garden\\locked-box.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-win1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-win1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-win2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-win2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-dead1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-dead1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Sounds/level-complete.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Sounds\\level-complete.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-garden/banana-complete.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-garden\\banana-complete.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-garden/banana-complete-hover.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-garden\\banana-complete-hover.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-garden/orange-unlocked.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-garden\\orange-unlocked.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-garden/orange-complete.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-garden\\orange-complete.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-garden/coco-unlocked.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-garden\\coco-unlocked.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-garden/coco-complete.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-garden\\coco-complete.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Nathaniel-19.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\Nathaniel-19.otf",
+        "userAdded": true
+      },
+      {
+        "file": "assets/InknutAntiqua-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\InknutAntiqua-Regular.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/back.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\back.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BG/ground1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\ground1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BG/bg1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\bg1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Items/Banana.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Items\\Banana.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BG/tile1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\tile1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BG/ground2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\ground2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BG/bg2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\bg2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BG/tile2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\tile2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Items/orange.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Items\\orange.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BG/garden-theme.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\garden-theme.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-idle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-idle2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-jump1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-jump1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-jump2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-jump2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-jump3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-jump3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-jump4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-jump4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-fall1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-fall1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-fall2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-fall2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-fall3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-fall3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-fall4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-fall4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-walk1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-walk1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-walk2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-walk2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-walk3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-walk3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-walk4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-walk4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-walk5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-walk5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-idle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-idle2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-jump1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-jump1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-jump2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-jump2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-jump3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-jump3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-jump4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-jump4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-fall1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-fall1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-fall2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-fall2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-fall3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-fall3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-fall4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-fall4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-walk1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-walk1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-walk2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-walk2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-walk3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-walk3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-walk4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-walk4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-walk5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-walk5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-win1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-win1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-win2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-win2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-beach/granny-dead1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-beach\\granny-dead1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BG/bg3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\bg3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BG/ground3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\ground3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BG/tile3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\tile3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Items/coconut.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Items\\coconut.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Sounds/beach-sound.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Sounds\\beach-sound.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BG/bg4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\bg4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BG/tile4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\tile4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BG/ground4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\ground4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Items/apple.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Items\\apple.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\New image.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stone.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\stone.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sounds/cave-sound.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Sounds\\cave-sound.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-idle2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-jump1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-jump1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-jump2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-jump2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-jump3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-jump3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-jump4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-jump4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-fall1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-fall1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-fall2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-fall2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-fall3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-fall3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-fall4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-fall4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-walk1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-walk1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-walk2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-walk2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-walk3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-walk3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-walk4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-walk4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-walk5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-walk5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-win1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-win1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-win2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-win2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-cave/granny-dead1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-cave\\granny-dead1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-garden/apple-unlocked.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-garden\\apple-unlocked.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-garden/apple-complete.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-garden\\apple-complete.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy/monkey1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy\\monkey1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy/monkey2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy\\monkey2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy/monkey11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy\\monkey11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy/monkey4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy\\monkey4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy/monkey5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy\\monkey5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy/monkey6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy\\monkey6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy/monkey3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy\\monkey3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy/raccoon1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy\\raccoon1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy/raccoon2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy\\raccoon2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy/raccoon3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy\\raccoon3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy/stone.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy\\stone.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BG/menu-theme.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\menu-theme.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Small Plastic Green Round Switch_Off.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Small Plastic Green Round Switch_Off.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Toggle Switch/80b157db1711ebc0166b1e42ff29bbf8837b5c9a0b1d62494e8eb5ca06837a31_Small Plastic Green Round Switch_Off.png",
+          "name": "Small Plastic Green Round Switch_Off.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Small Plastic Green Round Switch_On.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Small Plastic Green Round Switch_On.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Toggle Switch/0af9e04c0c382482aeeaa36bc713a626249d6f6df3280bbccc6a042973ad555c_Small Plastic Green Round Switch_On.png",
+          "name": "Small Plastic Green Round Switch_On.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/slide.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\slide.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/slider.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\slider.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/state=hover.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\state=hover.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Border.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Square White Slider Border.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Square White Slider Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/324e5f522f6242e9f93090e75ddc38427c3a6c42e8236dbf0ed541bd85cf7221_Square White Slider Border.png",
+          "name": "Square White Slider Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/47bc684198cd25b3ec74b0e72c2e2c7abb1b6736bd9f4b78a943c663e83118bf_Square White Slider Fill Bar.png",
+          "name": "Square White Slider Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Thumb.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Square White Slider Thumb.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Square White Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
+          "name": "Square White Slider Thumb.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Fill Bar.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Square White Slider Fill Bar.png2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-settings/Square White Slider Thumb.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/UI/menu-settings/Square White Slider Thumb.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets\\UI\\menu-settings\\Square White Slider Thumb.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-settings/Square White Slider Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-settings\\Square White Slider Fill Bar.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-settings/Square White Slider Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\menu-settings\\Square White Slider Border.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/menu-settings/Square White Slider Fill Bar.png2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/UI/menu-settings/Square White Slider Fill Bar.png2.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets\\UI\\menu-settings\\Square White Slider Fill Bar.png2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Icon.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Thumb.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon-phone.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Icon-phone.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/home.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\home.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-dead1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-dead1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-win1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-win1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grams/granny-rain/granny-win2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grams\\granny-rain\\granny-win2.png",
+        "smoothed": true,
+        "userAdded": false
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "btn_back",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\UI\\back.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 76,
+                        "y": 0
+                      },
+                      {
+                        "x": 76,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Elder",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "maxSpeed": 550,
+          "acceleration": 1500,
+          "canGoDownFromJumpthru": true,
+          "canGrabPlatforms": false,
+          "canGrabWithoutMoving": false,
+          "deceleration": 1500,
+          "gravity": 2300,
+          "ignoreDefaultControls": true,
+          "jumpSpeed": 1500,
+          "jumpSustainTime": 0,
+          "ladderClimbingSpeed": 150,
+          "maxFallingSpeed": 3000,
+          "slopeMaxAngle": 60,
+          "useLegacyTrajectory": false,
+          "xGrabTolerance": 10,
+          "yGrabOffset": 0
+        },
+        {
+          "name": "SmoothCamera",
+          "type": "SmoothCamera::SmoothCamera",
+          "LeftwardSpeed": 0.9999,
+          "RightwardSpeed": 0.9999,
+          "UpwardSpeed": 0.9999,
+          "DownwardSpeed": 0.9,
+          "FollowOnX": true,
+          "FollowOnY": false,
+          "FollowFreeAreaLeft": 0,
+          "FollowFreeAreaRight": 0,
+          "FollowFreeAreaTop": 0,
+          "FollowFreeAreaBottom": 0,
+          "CameraOffsetX": 400,
+          "CameraOffsetY": 0,
+          "CameraDelay": 0,
+          "ForecastTime": 0,
+          "ForecastHistoryDuration": 0,
+          "LogLeftwardSpeed": 0,
+          "LogRightwardSpeed": 0,
+          "LogDownwardSpeed": 0,
+          "LogUpwardSpeed": 0,
+          "DelayedCenterX": 0,
+          "DelayedCenterY": 0,
+          "ForecastHistoryMeanX": 0,
+          "ForecastHistoryMeanY": 0,
+          "ForecastHistoryVarianceX": 0,
+          "ForecastHistoryCovariance": 0,
+          "ForecastHistoryLinearA": 0,
+          "ForecastHistoryLinearB": 0,
+          "ForecastedX": 0,
+          "ForecastedY": 0,
+          "ProjectedNewestX": 0,
+          "ProjectedNewestY": 0,
+          "ProjectedOldestX": 0,
+          "ProjectedOldestY": 0,
+          "ForecastHistoryVarianceY": 0,
+          "Index": 0,
+          "CameraDelayCatchUpSpeed": 0,
+          "CameraExtraDelay": 0,
+          "WaitingSpeedXMax": 0,
+          "WaitingSpeedYMax": 0,
+          "WaitingEnd": 0,
+          "CameraDelayCatchUpDuration": 0,
+          "LeftwardSpeedMax": 9000,
+          "RightwardSpeedMax": 9000,
+          "UpwardSpeedMax": 9000,
+          "DownwardSpeedMax": 9000,
+          "OldX": 9000,
+          "OldY": 9000,
+          "IsCalledManually": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.25,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Grams\\granny-idle.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 88,
+                        "y": 0
+                      },
+                      {
+                        "x": 116,
+                        "y": 65
+                      },
+                      {
+                        "x": 96,
+                        "y": 122
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 122.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Grams\\granny-idle2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 88,
+                        "y": 0
+                      },
+                      {
+                        "x": 116,
+                        "y": 65
+                      },
+                      {
+                        "x": 96,
+                        "y": 122
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 122.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Jump",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.09,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\grams\\granny-jump1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 88,
+                        "y": 0
+                      },
+                      {
+                        "x": 116,
+                        "y": 65
+                      },
+                      {
+                        "x": 96,
+                        "y": 122
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 122.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\grams\\granny-jump2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 88,
+                        "y": 0
+                      },
+                      {
+                        "x": 116,
+                        "y": 65
+                      },
+                      {
+                        "x": 96,
+                        "y": 122
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 122.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\grams\\granny-jump3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 88,
+                        "y": 0
+                      },
+                      {
+                        "x": 116,
+                        "y": 65
+                      },
+                      {
+                        "x": 96,
+                        "y": 122
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 122.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\grams\\granny-jump4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 88,
+                        "y": 0
+                      },
+                      {
+                        "x": 116,
+                        "y": 65
+                      },
+                      {
+                        "x": 96,
+                        "y": 122
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 122.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fall",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.09,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\grams\\granny-fall1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 88,
+                        "y": 0
+                      },
+                      {
+                        "x": 116,
+                        "y": 65
+                      },
+                      {
+                        "x": 96,
+                        "y": 122
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 122.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\grams\\granny-fall2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 88,
+                        "y": 0
+                      },
+                      {
+                        "x": 116,
+                        "y": 65
+                      },
+                      {
+                        "x": 96,
+                        "y": 122
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 122.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\grams\\granny-fall3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 88,
+                        "y": 0
+                      },
+                      {
+                        "x": 116,
+                        "y": 65
+                      },
+                      {
+                        "x": 96,
+                        "y": 122
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 122.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\grams\\granny-fall4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 88,
+                        "y": 0
+                      },
+                      {
+                        "x": 116,
+                        "y": 65
+                      },
+                      {
+                        "x": 96,
+                        "y": 122
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 122.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Walk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.09,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Grams\\granny-walk1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 88,
+                        "y": 0
+                      },
+                      {
+                        "x": 116,
+                        "y": 65
+                      },
+                      {
+                        "x": 96,
+                        "y": 122
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 122.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Grams\\granny-walk2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 88,
+                        "y": 0
+                      },
+                      {
+                        "x": 116,
+                        "y": 65
+                      },
+                      {
+                        "x": 96,
+                        "y": 122
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 122.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Grams\\granny-walk3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 88,
+                        "y": 0
+                      },
+                      {
+                        "x": 116,
+                        "y": 65
+                      },
+                      {
+                        "x": 96,
+                        "y": 122
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 122.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Grams\\granny-walk4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 88,
+                        "y": 0
+                      },
+                      {
+                        "x": 116,
+                        "y": 65
+                      },
+                      {
+                        "x": 96,
+                        "y": 122
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 122.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Grams\\granny-walk5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 64.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 88,
+                        "y": 0
+                      },
+                      {
+                        "x": 116,
+                        "y": 65
+                      },
+                      {
+                        "x": 96,
+                        "y": 122
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 122.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Elder_win",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.25,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Grams\\granny-win1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 20,
+                        "y": 0
+                      },
+                      {
+                        "x": 101,
+                        "y": 0
+                      },
+                      {
+                        "x": 114,
+                        "y": 63.5
+                      },
+                      {
+                        "x": 102.5,
+                        "y": 124.5
+                      },
+                      {
+                        "x": 20,
+                        "y": 125
+                      },
+                      {
+                        "x": 4.5,
+                        "y": 63
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Grams\\granny-win2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 20,
+                        "y": 0
+                      },
+                      {
+                        "x": 101,
+                        "y": 0
+                      },
+                      {
+                        "x": 114,
+                        "y": 63.5
+                      },
+                      {
+                        "x": 102.5,
+                        "y": 124.5
+                      },
+                      {
+                        "x": 20,
+                        "y": 125
+                      },
+                      {
+                        "x": 4.5,
+                        "y": 63
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Elder_death",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "LinearMovement",
+          "type": "LinearMovement::LinearMovement",
+          "SpeedX": 0,
+          "SpeedY": -80
+        }
+      ],
+      "animations": [
+        {
+          "name": "Death",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Grams\\granny-dead1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 89,
+                        "y": 0
+                      },
+                      {
+                        "x": 89,
+                        "y": 133.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 133.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Theme_bg",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BG\\menu-theme.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 3184,
+                        "y": 0
+                      },
+                      {
+                        "x": 3184,
+                        "y": 2712
+                      },
+                      {
+                        "x": 0,
+                        "y": 2712
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "home_btn",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\UI\\home.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 225,
+                        "y": 0
+                      },
+                      {
+                        "x": 225,
+                        "y": 195
+                      },
+                      {
+                        "x": 0,
+                        "y": 195
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "btn_back"
+      },
+      {
+        "objectName": "Elder"
+      },
+      {
+        "objectName": "Elder_win"
+      },
+      {
+        "objectName": "Elder_death"
+      },
+      {
+        "objectName": "Theme_bg"
+      },
+      {
+        "objectName": "home_btn"
+      }
+    ]
+  },
+  "objectsGroups": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "FruitCount1",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "FruitCount2",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "FruitCount3",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "FruitCount4",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "L",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "L1",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "folded": true,
+          "name": "L2",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "folded": true,
+          "name": "L3",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "folded": true,
+          "name": "L4",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "Music",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "folded": true,
+          "name": "Sound",
+          "type": "number",
+          "value": 50
+        }
+      ]
+    }
+  ],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/opening"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/main-menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/garden-menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/settings-menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/l1"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/l2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/l3"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/l4"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/ending"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/exit-check"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritetoggleswitch"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/timedbackandforthmovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/ellipsemovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/pixelperfectmovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspriteslider"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/tiledunitsbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/buttonstates"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/drawpathfinding"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/sway"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shakeobject"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/linearmovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/rectanglemovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/sinemovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/isonscreen"
+    }
+  ],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
